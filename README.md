@@ -14,9 +14,9 @@ docker --version
 🚀 Como Executar o Hello World
 O Docker possui uma imagem oficial de testes chamada hello-world. O comando abaixo se encarrega de baixar a imagem (caso ela não exista na sua máquina) e criar um contêiner para executá-la.
 
-No seu terminal, execute o seguinte comando:
-🔍 Comandos Úteis para Explorar🛠️
+No seu terminal, execute os seguintes comandos:
 
-docker run hello-world
+🔍 docker pull hollo-world🛠️
+🔍 docker run hello-world🛠️
 
 
