@@ -1,2 +1,2 @@
 # readme.md
-instrucões docker-hello world
+instruções docker-hello world
