@@ -27,38 +27,6 @@ Este projeto demonstra como criar um **servidor web local utilizando Docker e Ng
 http://localhost:8080
 ```
 
-## 📋 Pré-requisitos
-
-* Windows 11
-* Docker Desktop
-* Navegador (Edge, Chrome etc.)
-
-## 1. Verificar o Docker
-
-No CMD ou PowerShell:
-
-```cmd
-docker --version
-```
-
-Para testar:
-
-```cmd
-docker run hello-world
-```
-
-Se aparecer `Hello from Docker!`, o Docker está funcionando.
-
-## 2. Criar o servidor Nginx
-
-Execute:
-
-```cmd
-docker run -d -p 127.0.0.1:8080:80 --name meu-site nginx
-```
-
-### O que significa?
-
 * `docker run` → cria e executa um container.
 * `-d` → executa em segundo plano.
 * `127.0.0.1:8080:80` → conecta a porta 8080 do Windows à porta 80 do Nginx.
@@ -142,74 +110,4 @@ Abra:
 ```text
 http://localhost:8080
 ```
-
-O Nginx carregará o arquivo:
-
-```text
-index.html
-```
-
-As alterações feitas no HTML, CSS ou JavaScript podem ser salvas normalmente no Windows e visualizadas atualizando o navegador.
-
-## 🔧 Comandos principais
-
-```cmd
-docker --version
-```
-
-Verificar versão do Docker.
-
-```cmd
-docker run hello-world
-```
-
-Testar o Docker.
-
-```cmd
-docker ps
-```
-
-Ver containers em execução.
-
-```cmd
-docker stop meu-site
-```
-
-Parar o container.
-
-```cmd
-docker start meu-site
-```
-
-Iniciar novamente.
-
-```cmd
-docker rm meu-site
-```
-
-Remover o container.
-
-## 🎯 Resultado
-
-Ao final, temos:
-
-```text
-Windows 11
-     │
-     ▼
-Docker Desktop
-     │
-     ▼
-Container Nginx
-     │
-     ▼
-Arquivos HTML/CSS/JS
-     │
-     ▼
-http://localhost:8080
-```
-
-O **localhost** permite executar e testar um servidor web localmente no próprio computador, enquanto o Docker mantém o Nginx isolado em um container.
-
-
 
