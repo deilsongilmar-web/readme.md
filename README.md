@@ -86,7 +86,7 @@ docker rm meu-site
 Depois crie novamente utilizando a pasta do projeto:
 
 ```cmd
-docker run -d -p 127.0.0.1:8080:80 --name meu-site -v "C:\Users\franciscooliveira673\Documents\meu-projeto:/usr/share/nginx/html" nginx
+docker run -d -p 127.0.0.1:8080:80 --name meu-site -v "$(pwd):/usr/share/nginx/html" nginx
 ```
 
 O parâmetro `-v` conecta a pasta do Windows com a pasta utilizada pelo Nginx dentro do container.
